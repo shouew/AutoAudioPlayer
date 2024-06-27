@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "audioautoplayer"
+version = "0.0.1"
+description = ""
+authors = ["XYCode Kerman <xycode-xyc@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "<3.9,>3.8"
+playsound = {git = "https://mirror.ghproxy.com/github.com/killjoy1221/playsound.git"}
+requests = "^2.31.0"
+pyinstaller = "^6.5.0"
+
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+priority = "primary"
+
+
+[tool.poetry.group.dev.dependencies]
+nuitka = "^2.1.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
